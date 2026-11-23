@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Runs Next.js on Netlify (server rendering, routing, images).
+# Without it only the raw .next files get deployed and "/" returns "Page not found".
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
